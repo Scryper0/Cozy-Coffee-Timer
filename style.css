@@ -1,0 +1,97 @@
+body {
+  font-family: "Jersey 15";
+  background: linear-gradient(#ffffff, #f3e5e5, #ebc2c2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 15px;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff, #eecfcf);
+  z-index: -1;
+  animation: gradientShift 20s ease infinite;
+}
+
+.image-container img {
+  height: 50px;
+  width: 300px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.coffee-bar {
+  width: 400px;
+  background-color: #e0e0e0;
+  border: #794a35 solid 3px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 20px;
+  padding: 2px 2px 2px 2px;
+}
+
+.coffee-liquid {
+  height: 100%;
+  width: 0%; /* Adjust this for progress */
+  background-color: #aa6e53;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.coffee-timer-text {
+  font-size: 50px;
+  color: #794a35;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+  margin-top: -30px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  font-family: "Jersey 15";
+  color: #794a35;
+  background-color: #fff6ee;
+  border: #794a35 solid 3px;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 8px 0px 0px #9e9595;
+}
+
+button:hover {
+  background-color: #d4bba3;
+}
+
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0 3px #666;
+}
